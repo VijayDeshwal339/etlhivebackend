@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db.cjs');
-const authRoutes = require('./routes/authRoutes.cjs');
-const leadRoutes = require('./routes/leadRoutes.cjs');
+const connectDB = require('./src/config/db.cjs');
+const authRoutes = require('./src/routes/authRoutes.cjs');
+const leadRoutes = require('./src/routes/leadRoutes.cjs');
 
 dotenv.config();
 connectDB();
